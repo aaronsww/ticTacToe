@@ -84,3 +84,20 @@ function playedMove(n)
         currentPlayer = player1;
     }
 }
+
+function combination(){
+    if(gameBoard[0] == gameBoard[1] && gameBoard[0] == gameBoard[2])
+        console.log("done");  
+    else if(gameBoard[3] == gameBoard[4] && gameBoard[3] == gameBoard[5])
+        console.log("done");   
+    else if(gameBoard[6] == gameBoard[7] && gameBoard[6] == gameBoard[8])
+        console.log("done");   
+    else if(gameBoard[0] == gameBoard[3] && gameBoard[0] == gameBoard[6])
+        console.log("done");   
+    else if(gameBoard[1] == gameBoard[4] && gameBoard[1] == gameBoard[7])
+        console.log("done");   
+    else if(gameBoard[2] == gameBoard[5] && gameBoard[2] == gameBoard[8])
+        console.log("done");   
+    else
+        console.log("not yet");
+}
