@@ -98,6 +98,10 @@ function combination(){
         console.log("done");   
     else if(gameBoard[2] == gameBoard[5] && gameBoard[2] == gameBoard[8])
         console.log("done");   
+    else if(gameBoard[0] == gameBoard[4] && gameBoard[0] == gameBoard[8])
+        console.log("done");   
+    else if(gameBoard[2] == gameBoard[4] && gameBoard[2] == gameBoard[6])
+        console.log("done");   
     else
         console.log("not yet");
 }
