@@ -3,9 +3,10 @@ let gameBoard = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']
 const assign = document.querySelector(".submitBtn")
 
 assign.addEventListener('click', () =>{
+    const start = document.querySelector(".start")
     const player1 =  document.getElementById("player1").value;
     const player2 =  document.getElementById("player2").value;
-   
+    start.classList.add("shrinkIt")
 })
 let currentPlayer = player1;
 
@@ -15,63 +16,63 @@ zero.addEventListener('click', () => {
     playedMove(n);
     zero.textContent = gameBoard[0];
     combination();
-});
+}, {once : true});
 const one = document.querySelector(".one");
 one.addEventListener('click', () => {
     let n = 1;
     playedMove(n);
     one.textContent = gameBoard[1];
     combination();
-});
+} , {once : true});
 const two = document.querySelector(".two");
 two.addEventListener('click', () => {
     let n = 2;
     playedMove(n);
     two.textContent = gameBoard[2];
     combination();
-});
+} ,{once : true});
 const three = document.querySelector(".three");
 three.addEventListener('click', () => {
     let n = 3;
     playedMove(n);
     three.textContent = gameBoard[3];
     combination();
-});
+} , {once : true});
 const four = document.querySelector(".four");
 four.addEventListener('click', () => {
     let n = 4;
     playedMove(n);
     four.textContent = gameBoard[4];
     combination();
-});
+}, {once : true});
 const five = document.querySelector(".five");
 five.addEventListener('click', () => {
     let n = 5;
     playedMove(n);
     five.textContent = gameBoard[5];
     combination();
-});
+}, {once : true});
 const six = document.querySelector(".six");
 six.addEventListener('click', () => {
     let n = 6;
     playedMove(n);
     six.textContent = gameBoard[6];
     combination();
-});
+}, {once : true});
 const seven = document.querySelector(".seven");
 seven.addEventListener('click', () => {
     let n = 7;
     playedMove(n);
     seven.textContent = gameBoard[7];
     combination();
-});
+}, {once : true});
 const eight = document.querySelector(".eight");
 eight.addEventListener('click', () => {
     let n = 8;
     playedMove(n);
     eight.textContent = gameBoard[8];
     combination();
-});
+}, {once : true});
 
 function playedMove(n)
 {
@@ -105,3 +106,7 @@ function combination(){
     else
         console.log("not yet");
 }
+
+
+
+ 
