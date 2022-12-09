@@ -1,12 +1,13 @@
 let gameBoard = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']
 
 const assign = document.querySelector(".submitBtn")
+const result = document.querySelector(".result")
 
 assign.addEventListener('click', () =>{
     const start = document.querySelector(".start")
-    const player1 =  document.getElementById("player1").value;
-    const player2 =  document.getElementById("player2").value;
+    result.textContent =`${player1.value} vs ${player2.value}`;
     start.classList.add("shrinkIt")
+    
 })
 let currentPlayer = player1;
 
@@ -88,25 +89,39 @@ function playedMove(n)
 
 function combination(){
     if(gameBoard[0] == gameBoard[1] && gameBoard[0] == gameBoard[2])
-        console.log("done");  
+        winner();
     else if(gameBoard[3] == gameBoard[4] && gameBoard[3] == gameBoard[5])
-        console.log("done");   
+        winner();    
     else if(gameBoard[6] == gameBoard[7] && gameBoard[6] == gameBoard[8])
-        console.log("done");   
+        winner();     
     else if(gameBoard[0] == gameBoard[3] && gameBoard[0] == gameBoard[6])
-        console.log("done");   
+        winner();     
     else if(gameBoard[1] == gameBoard[4] && gameBoard[1] == gameBoard[7])
-        console.log("done");   
+        winner();      
     else if(gameBoard[2] == gameBoard[5] && gameBoard[2] == gameBoard[8])
-        console.log("done");   
+         winner();    
     else if(gameBoard[0] == gameBoard[4] && gameBoard[0] == gameBoard[8])
-        console.log("done");   
+         winner();   
     else if(gameBoard[2] == gameBoard[4] && gameBoard[2] == gameBoard[6])
-        console.log("done");   
-    else
-        console.log("not yet");
+        winner();      
 }
 
-
+function winner(){
+    zero.disabled = true;
+    one.disabled = true;
+    two.disabled = true;
+    three.disabled = true;
+    four.disabled = true;
+    five.disabled = true;
+    six.disabled = true;
+    seven.disabled = true;
+    eight.disabled = true;
+    const announceWinner = document.createElement('div');
+    if(currentPlayer == player1)
+        announceWinner.textContent = `${player2.value} wins!`;
+    else
+        announceWinner.textContent = `${player1.value} wins!`;
+    result.appendChild(announceWinner);
+}
 
  
