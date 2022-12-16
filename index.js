@@ -2,12 +2,16 @@ let gameBoard = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']
 
 const assign = document.querySelector(".submitBtn")
 const result = document.querySelector(".result")
+const versus = document.createElement('div');  
+const theMainContainer = document.querySelector(".mainContainer")
 
 assign.addEventListener('click', () =>{
     const start = document.querySelector(".start")
-    result.textContent =`${player1.value} vs ${player2.value}`;
+    versus.textContent =`${player1.value} vs ${player2.value}`;
+    result.appendChild(versus);
     start.classList.add("shrinkIt")
-    
+    theMainContainer.classList.remove("mainContainer");
+    theMainContainer.classList.add("mainContainerShow"  )
 })
 let currentPlayer = player1;
 
@@ -103,7 +107,10 @@ function combination(){
     else if(gameBoard[0] == gameBoard[4] && gameBoard[0] == gameBoard[8])
          winner();   
     else if(gameBoard[2] == gameBoard[4] && gameBoard[2] == gameBoard[6])
-        winner();      
+        winner();    
+    else if(gameBoard[0] != 'a' && gameBoard[1] != 'b' && gameBoard[2] != 'c' && gameBoard[3] != 'd' && gameBoard[4] != 'e'
+    && gameBoard[5] != 'f' && gameBoard[6] != 'g' && gameBoard[7] != 'h' && gameBoard[8] != 'i')
+        draw();
 }
 
 function winner(){
@@ -116,12 +123,40 @@ function winner(){
     six.disabled = true;
     seven.disabled = true;
     eight.disabled = true;
+    result.removeChild(versus);
     const announceWinner = document.createElement('div');
     if(currentPlayer == player1)
         announceWinner.textContent = `${player2.value} wins!`;
     else
         announceWinner.textContent = `${player1.value} wins!`;
     result.appendChild(announceWinner);
+    again();
 }
 
+function draw(){
+    zero.disabled = true;
+    one.disabled = true;
+    two.disabled = true;
+    three.disabled = true;
+    four.disabled = true;
+    five.disabled = true;
+    six.disabled = true;
+    seven.disabled = true;
+    eight.disabled = true;
+    result.removeChild(versus);
+    const announceWinner = document.createElement('div');
+    announceWinner.textContent = `It's a draw!`;
+    result.appendChild(announceWinner);
+    again();
+}
+
+
+function again(){
+        const reclick = document.createElement('button');
+        reclick.textContent = "Play Again";
+        reclick.style.cssText = 'font-size: 30px;'
+        reclick.addEventListener('click', () => location.reload());
+        theMainContainer.appendChild(reclick);
+}
+  
  
