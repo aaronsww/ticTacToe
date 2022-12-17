@@ -1,5 +1,10 @@
+#projectHeader{
+    font-size: 80px;
+    margin-top: -30px;
+}
 .start{
-    border: 2px solid black;
+   border-radius: 12px;
+    background-color: #CBC5EA;
     padding: 15px;
     width: 280px;
     height: 300px;
@@ -21,17 +26,36 @@
 #player1,#player2{
    padding: 10px;
    font-size: 28px;
+   background-color: #F8F8F8;
+   border: none;
+   border-radius: 12px;
+   color: #413c58;
 }
 .start>button{
    padding: 10px;
    font-size: 32px;
+   background-color: #F8F8F8;
+   color: #413c58;
+   border: none;
+   border-radius: 12px;
+   cursor: pointer;
 }
+.start>button:hover{
+    padding: 10px;
+    font-size: 32px;
+    background-color: #413c58;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+ }
 .shrinkIt{
     transition: transform 0.15s, top 0.15s;
     transform: translate(-50%, -50%) scale(0.0);
 } 
 .result{
-    font-size: 80px;
+    margin-top: 40px;
+    font-size: 50px;
 }  
 .mainContainer{
     visibility: hidden;
@@ -45,7 +69,7 @@
     visibility: visible;
 }
 .container{
-    margin-top: 40px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 150px 150px 150px;
     grid-template-rows: 150px 150px 150px;
@@ -53,8 +77,12 @@
 .container>button{
     font-size: 120px;
 }
+.container>button:hover{
+    cursor: pointer;
+    background-color: #f7f8fc;
+}
 .zero,.one,.two,.three,.four,.five,.six,.seven,.eight{
-    border: 7px solid brown;
+    border: 7px solid #413c58;
    background-color: white;
 }
 .zero,.one,.two{
@@ -84,7 +112,8 @@
     transition: transform 0.15s, top 0.15s;
 }
 .reclick{
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 36px;
     padding: 10px 70px 10px 70px;
+    border-radius: 12px;
 }
