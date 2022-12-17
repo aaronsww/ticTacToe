@@ -1,8 +1,8 @@
 .start{
     border: 2px solid black;
     padding: 20px;
-    width: 200px;
-    height: 220px;
+    width: 300px;
+    height: 320px;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -12,19 +12,19 @@
     justify-content: space-around;
 }
 #logo{
-    height: 100px;
-    width: 100px;
-    margin-top: -70px;
+    height: 180px;
+    width: 180px;
+    margin-top: -120px;
     margin-bottom: 5px;
     margin-left: 25%;
 }
 #player1,#player2{
    padding: 10px;
-   font-size: 20px;
+   font-size: 28px;
 }
 .start>button{
    padding: 10px;
-   font-size: 26px;
+   font-size: 32px;
 }
 .shrinkIt{
     transition: transform 0.15s, top 0.15s;
