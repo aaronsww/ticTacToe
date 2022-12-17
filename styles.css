@@ -19,13 +19,29 @@
     border: 2px solid black;
     padding: 20px;
     width: 200px;
-    height: 200px;
+    height: 220px;
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
+    justify-content: space-around;
+}
+#logo{
+    height: 100px;
+    width: 100px;
+    margin-top: -70px;
+    margin-bottom: 5px;
+    margin-left: 25%;
+}
+#player1,#player2{
+   padding: 10px;
+   font-size: 20px;
+}
+.start>button{
+   padding: 10px;
+   font-size: 26px;
 }
 .shrinkIt{
     transition: transform 0.15s, top 0.15s;
