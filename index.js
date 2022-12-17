@@ -154,7 +154,7 @@ function draw(){
 function again(){
         const reclick = document.createElement('button');
         reclick.textContent = "Play Again";
-        reclick.style.cssText = 'font-size: 30px;'
+        reclick.classList.add("reclick");
         reclick.addEventListener('click', () => location.reload());
         theMainContainer.appendChild(reclick);
 }
