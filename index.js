@@ -157,7 +157,6 @@ function again(){
         reclick.classList.add("reclick");
         const icon = document.createElement('img');
         icon.src = 'images/play-again.png'
-        icon.setAttribute("style", "height: 30px; margin-bottom: -5px")
         reclick.appendChild(icon)
         reclick.addEventListener('click', () => location.reload());
         theMainContainer.appendChild(reclick);

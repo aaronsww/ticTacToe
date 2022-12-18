@@ -1,7 +1,8 @@
-#projectHeader{
-    font-size: 80px;
-    margin-top: -30px;
+@font-face {
+    font-family: 'unseen';
+    src: url(fonts/the-unseen/the\ unseen.ttf);
 }
+
 .start{
    border-radius: 12px;
     background-color: #CBC5EA;
@@ -15,6 +16,7 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     justify-content: space-around;
+    box-shadow: 1px 2px 10px #413c58;
 }
 #logo{
     height: 180px;
@@ -30,19 +32,22 @@
    border: none;
    border-radius: 12px;
    color: #413c58;
+   font-family: unseen;
 }
 .start>button{
-   padding: 10px;
-   font-size: 32px;
+   padding: 5px;
+   font-size: 40px;
    background-color: #F8F8F8;
    color: #413c58;
    border: none;
    border-radius: 12px;
    cursor: pointer;
+   font-family: 'Fredericka the Great', cursive;
+   font-weight: 900;
 }
 .start>button:hover{
-    padding: 10px;
-    font-size: 32px;
+    padding: 5px;
+    font-size: 40px;
     background-color: #413c58;
     color: white;
     border: none;
@@ -53,9 +58,14 @@
     transition: transform 0.15s, top 0.15s;
     transform: translate(-50%, -50%) scale(0.0);
 } 
+#projectHeader{
+    font-size: 90px;
+    margin-top: -30px;
+    font-family: unseen;
+}
 .result{
-    margin-top: 40px;
-    font-size: 50px;
+    font-size: 70px;
+    font-family: 'Fredericka the Great', cursive;
 }  
 .mainContainer{
     visibility: hidden;
@@ -75,14 +85,16 @@
     grid-template-rows: 150px 150px 150px;
 } 
 .container>button{
-    font-size: 120px;
+    font-family: unseen;
+    font-size: 160px;
+    padding: 10px;
 }
 .container>button:hover{
     cursor: pointer;
     background-color: #f7f8fc;
 }
 .zero,.one,.two,.three,.four,.five,.six,.seven,.eight{
-    border: 7px solid #413c58;
+    border: 7px solid #2b2d42;
    background-color: white;
 }
 .zero,.one,.two{
@@ -112,8 +124,23 @@
     transition: transform 0.15s, top 0.15s;
 }
 .reclick{
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 36px;
-    padding: 10px 70px 10px 70px;
+    padding: 10px 40px 10px 40px;
     border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 700;
+    border: none;
+    background-color: #ccc4ef;
+    color: #413c58;
+}
+.reclick:hover{
+    background-color: #bab3d6;
+}
+
+.reclick>img{
+    padding-left: 7px;
+    height: 40px; 
+    margin-bottom: -10px
 }
