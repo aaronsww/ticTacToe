@@ -2,7 +2,13 @@
     font-family: 'unseen';
     src: url(fonts/the-unseen/the\ unseen.ttf);
 }
-
+body{
+    background-image: url(images/design-space-paper-textured-background.jpg);
+}
+.change{
+    background-image: url(images/ps.png);
+    background-color: #f7f8fc;
+}
 .start{
    border-radius: 12px;
     background-color: #CBC5EA;
@@ -35,7 +41,7 @@
    font-family: unseen;
 }
 .start>button{
-   padding: 5px;
+  padding-bottom: 10px;
    font-size: 40px;
    background-color: #F8F8F8;
    color: #413c58;
@@ -46,7 +52,7 @@
    font-weight: 900;
 }
 .start>button:hover{
-    padding: 5px;
+    padding-bottom: 10px;
     font-size: 40px;
     background-color: #413c58;
     color: white;
@@ -54,16 +60,23 @@
     border-radius: 12px;
     cursor: pointer;
  }
+ .start>button>img{
+    height: 40px;
+    margin-bottom: -10px;
+    margin-left: -10px;
+ }
 .shrinkIt{
     transition: transform 0.15s, top 0.15s;
     transform: translate(-50%, -50%) scale(0.0);
 } 
 #projectHeader{
+    color: #2b2d42;
     font-size: 90px;
     margin-top: -30px;
     font-family: unseen;
 }
 .result{
+    color: #2b2d42;
     font-size: 70px;
     font-family: 'Fredericka the Great', cursive;
 }  
@@ -88,10 +101,13 @@
     font-family: unseen;
     font-size: 160px;
     padding: 10px;
+    color: #2b2d42;
+    background-color: #f7f8fc;
+    background-image: url(images/ps.png);
 }
 .container>button:hover{
     cursor: pointer;
-    background-color: #f7f8fc;
+    background-color: #dee2e6;
 }
 .zero,.one,.two,.three,.four,.five,.six,.seven,.eight{
     border: 7px solid #2b2d42;
@@ -142,5 +158,5 @@
 .reclick>img{
     padding-left: 7px;
     height: 40px; 
-    margin-bottom: -10px
+    margin-bottom: -10px;
 }

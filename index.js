@@ -6,6 +6,7 @@ const versus = document.createElement('div');
 const theMainContainer = document.querySelector(".mainContainer")
 
 assign.addEventListener('click', () =>{
+    document.body.classList.add("change");
     const start = document.querySelector(".start")
     versus.textContent =`${player1.value} vs ${player2.value}`;
     result.appendChild(versus);
