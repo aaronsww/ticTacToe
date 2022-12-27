@@ -102,9 +102,10 @@ body{
     font-size: 160px;
     padding: 10px;
     color: #2b2d42;
-    background-color: #f7f8fc;
-    background-image: url(images/ps.png);
-}
+    /* background-color: #f7f8fc; */
+    background: transparent;
+    /* background-image: url(images/ps.png); */
+}   
 .container>button:hover{
     cursor: pointer;
     background-color: #dee2e6;
