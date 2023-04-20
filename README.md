@@ -8,7 +8,9 @@ This project is a browser version of the game Tic-Tac-Toe that allows two player
 
 ### In Action
 
-<img src="" alt="">
+<img src="images\Document - Brave 20-04-2023 10_12_45 (2).png" alt="">
+<img src="images\Document - Brave 20-04-2023 10_13_24.png" alt="">
+<img src="images\Document - Brave 20-04-2023 10_13_37.png" alt="">
 
 ## Credits
 
